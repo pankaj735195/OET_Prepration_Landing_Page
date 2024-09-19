@@ -1,0 +1,144 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #E74C3C;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #c0392b;
+}
+
+/* Features and Course Structure Section */
+#features, #timeline {
+  padding: 50px 0;
+  background: #ecf0f1;
+}
+
+#features h2, #timeline h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background: #34495E;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+/* FAQ Section */
+#faq {
+  padding: 50px 0;
+  background: #f1f1f1;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  background: #3498DB;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.faq-answer {
+  background: white;
+  padding: 10px;
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: #2c3e5071;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-grid, .timeline {
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    display: block;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+}
